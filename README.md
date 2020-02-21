@@ -1,24 +1,33 @@
-# README
+# Запросы
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Создание, удаление и редактирование как обычно. Остальные ниже.
 
-Things you may want to cover:
+## Аутунтификация:
+```
+/api/authenticate
+```
 
-* Ruby version
+## Добавить в избранное:
+```
+/api/articles/:id/add_to_favorites
+```
 
-* System dependencies
+## Список избранного:
+```
+/api/favorites
+```
 
-* Configuration
+## Список авторов:
+```
+/api/show_authors
+```
 
-* Database creation
+## Все новости конкретного автора:
+```
+/api/author/:id
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Непрочитанные новости:
+```
+/api/show_unread_articles
+```
